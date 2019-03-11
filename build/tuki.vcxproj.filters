@@ -33,6 +33,9 @@
     <ClInclude Include="..\src\tuki\tukilib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\perc\percettrone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\include\token_string.c">
@@ -51,6 +54,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\tuki\tukilib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\perc\percettrone.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

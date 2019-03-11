@@ -6,7 +6,7 @@
 #include <windows.h>
 //#include <WinDef.h>
 
-int main()
+int APIENTRY _tWinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR lpCmdLine, int nCmdShow)
 {
   int energia_rimasta = 0;
   int danni_subiti    = 0;
@@ -18,10 +18,10 @@ int main()
 	
 
 #ifdef WINAPI
-	lpText = ();
-	LPCTSTR lpCaption = "Prova Message";
-	UINT    uType = MB_OK;
-	MessageBox(NULL, "Ciaonee", lpCaption, uType);
+	//lpText = ();
+	//LPCTSTR lpCaption = "Prova Message";
+	//UINT    uType = MB_OK;
+	MessageBox(NULL, "Ciaonee", "Prova Message", MB_ICONERROR);
 #endif
   FILE * file = stream("prova.txt");
 

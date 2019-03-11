@@ -170,6 +170,7 @@
     <ClInclude Include="..\src\include\recordset.h" />
     <ClInclude Include="..\src\include\record_db.h" />
     <ClInclude Include="..\src\include\token_string.h" />
+    <ClInclude Include="..\src\perc\percettrone.h" />
     <ClInclude Include="..\src\tuki\tukilib.h" />
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +180,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\src\include\token_string.c" />
+    <ClCompile Include="..\src\perc\percettrone.cpp" />
     <ClCompile Include="..\src\tuki\tukilib.c" />
     <ClCompile Include="..\src\tuki\tuki_main.c" />
     <ClCompile Include="..\src\tuki\tuki_turn.c" />
