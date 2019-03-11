@@ -10,11 +10,11 @@ typedef struct token_string_t token_string_t;
 token_string_t * new_token_string_t(); // Default params: string="", delimiter="|"
 token_string_t * new2_token_string_t(const char * string, const char * delimiter);
 //  Metodi per l'elaborazione di token_string_t
-void  add_tok       (token_string_t * this, const char* str);
-char* get_pos_tok   (token_string_t * this, int pos);
-char* get_next_tok  (token_string_t * this);
-int   items_tok     (token_string_t * this);                    // 
-void  clean_tok     (token_string_t * this);                    // Pulisce la stringa
-void  set_delim_tok (token_string_t * this, const char * str);  // setta nuovo delimitatore (le precedente stringa rimane divisa con vecchio delim.)
+void  add_tok       (token_string_t * this, const char* str);		// Add new token
+char* get_pos_tok   (token_string_t * this, int pos);						// Get a token in specified position
+char* get_next_tok  (token_string_t * this);										// Get next token 
+int   items_tok     (token_string_t * this);                    // Number of tokens
+void  clean_tok     (token_string_t * this);                    // Delete last string
+void  set_delim_tok (token_string_t * this, const char * str);  // Set new delimiter (previous token stay separate with old delimiter)
 char* get_tok       (char* str, const char* delimiter);
 #endif
