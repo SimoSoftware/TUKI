@@ -56,7 +56,7 @@
     <ClCompile Include="..\src\tuki\tukilib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\perc\percettrone.cpp">
+    <ClCompile Include="..\src\perc\percettrone.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

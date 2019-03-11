@@ -48,7 +48,7 @@ void add_tok(token_string_t * this, const char * str)
 
 char * get_pos_tok(token_string_t * this, const int pos)
 {
-  int itm = 0;
+  int itm;
 
   this->_counter_next = pos;
   if ((itm = items_tok(this)) != 0 && pos >= 0 && itm > pos) // Items strettamente maggiore di pos!
@@ -69,33 +69,33 @@ char * get_next_tok(struct token_string_t * this)
 }
 
 //int FUNCTION(items, token_string_t)(token_string_t * this)
-int items_tok(token_string_t * this)
+int items_tok(const token_string_t * this)
 {
   int count = 0;
   const int len = strlen(this->_str);
-  char delimiter = *this->_delimiter;
+  const char delimiter = *this->_delimiter;
   if(len > 0)
   {
-    const char * str = get_tok(this->_str, this->_delimiter);
+    const char * str = get_tok(this->_str, delimiter);
     
     while (str != NULL)
     {
       ++count;
-      str = get_tok(NULL, this->_delimiter);
+      str = get_tok(NULL, delimiter);
     }
     return count;
   }
   return 0; // else
 }
 
-void clean_tok(struct token_string_t* this)
+void clean_tok(token_string_t* this)
 {
   free(this->_str);
   this->_str = malloc(sizeof(char));
   *this->_str = '\0';
 }
 
-void set_delim_tok(struct token_string_t* this, const char* str)
+void set_delim_tok(token_string_t* this, const char* str)
 {
   this->_delimiter = str;
 }
@@ -132,7 +132,7 @@ char * get_tok(char * str, const char * delimiter)
     strncpy_s(str_ret, i - last_pos + 1 * sizeof(char), string_tokenized+last_pos, i-last_pos);
     str_ret[i - last_pos] = '\0';
     last_pos = i+1;   // Mi posiziono dopo il delimitatore
-    return (const char*)str_ret;
+    return str_ret;
   }
 
   // Next token

@@ -180,7 +180,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\src\include\token_string.c" />
-    <ClCompile Include="..\src\perc\percettrone.cpp" />
+    <ClCompile Include="..\src\perc\percettrone.c" />
     <ClCompile Include="..\src\tuki\tukilib.c" />
     <ClCompile Include="..\src\tuki\tuki_main.c" />
     <ClCompile Include="..\src\tuki\tuki_turn.c" />
