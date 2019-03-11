@@ -38,9 +38,6 @@
     <ClCompile Include="..\src\include\token_string.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\include\complex.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\include\record_db.c">
       <Filter>Source Files</Filter>
     </ClCompile>

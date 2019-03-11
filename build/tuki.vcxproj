@@ -166,7 +166,6 @@
     <ClInclude Include="..\src\tuki\tukilib.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\include\complex.c" />
     <ClCompile Include="..\src\include\recordset.c" />
     <ClCompile Include="..\src\include\record_db.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
